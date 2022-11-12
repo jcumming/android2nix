@@ -20,7 +20,7 @@ in
     default = {};
     example = {
       toolsVersion = "26.1.1";
-      platformToolsVersion = "31.0.3";
+      platformToolsVersion = "33.0.2";
       buildToolsVersions = [ "28.0.3" "30.0.3" ];
       platformVersions = [ "30" ];
       abiVersions = [ "armeabi-v7a" "arm64-v8a" ];
