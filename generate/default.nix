@@ -16,6 +16,6 @@ stdenv.mkDerivation {
 
   fixupPhase = ''
   wrapProgram $out/bin/generate.sh \
-              --prefix PATH : ${lib.makeBinPath [ go-maven-resolver parallel ] }
+              --prefix PATH : ${lib.makeBinPath [ go-maven-resolver parallel jq ] }
   '';
 }
