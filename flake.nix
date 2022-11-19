@@ -1,7 +1,8 @@
 {
   description = "Use Nix to compile Android apps ";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:jcumming/nixpkgs/jcumming-local";
+
   inputs.devshell-flake.url = "github:numtide/devshell";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
