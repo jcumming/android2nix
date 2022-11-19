@@ -42,6 +42,7 @@
                 pkgs = import nixpkgs {
                   inherit system;
                   config.android_sdk.accept_license = true;
+                  config.allowUnfree = true;
                   overlays = [ devshell-flake.overlay overlay ];
                 };
               in
