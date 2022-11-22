@@ -13,7 +13,7 @@ let
   deps = importJSON deps-path;
 
   # some .jar files have an `-aot` suffix that doesn't work for .pom files
-  getPOM = jarUrl: "${removeSuffix "-aot" jarUrl}.pom";
+  getPOM = jarUrl: "${removeSuffix "-aot" (removeSuffix "-nodeps" jarUrl)}.pom";
 
   loadMavenFile = dep: ext: file:
     ''
