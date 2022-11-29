@@ -51,7 +51,7 @@ in
 stdenv.mkDerivation rec {
   inherit name src;
 
-  nativeBuildInputs = with pkgs; [ bash jdk ]
+  nativeBuildInputs = with pkgs; [ bash jdk git ]
   ++ optionals stdenv.isDarwin [ file gnumake ];
 
   # Used by the Android Gradle build script in android/build.gradle
